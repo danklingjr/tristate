@@ -1,8 +1,33 @@
 /*!////////////////////////////////////////////////
 // THEME
 /////////////////////////////////////////////////*/
-$base-font-size: 16px;
-@function em($px, $base: $base-font-size){
+$font-size: 16px;
+@function em($px, $base: $font-size){
 	@return ($px / $base) * 1em;
 }
 
+$equestrian: #983b2c;
+$commercial: #88794f;
+$residential: #cd7f32;
+$agricultural: #4a3628;
+$alternateColor: #c3bab6;
+$textColor: #252525;
+
+$headline: 'Montserrat', sans-serif;
+$body: 'Roboto', sans-serif;
+
+hr{
+	position: relative;
+	width: 165px;
+	height: 10px;
+	background-color: $alternateColor;
+	&:after{
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 166px;
+		height: 26px;
+		background-image: url(../img/texture-hr.png);
+	}
+}

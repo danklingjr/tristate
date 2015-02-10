@@ -9,7 +9,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -28,7 +29,7 @@
                 </div>
                 <nav role="navigation">
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="" class="selected">Home</a></li>
                         <li><a href="">Photo Gallery</a></li>
                         <li><a href="">Construction Details</a></li>
                         <li><a href="">Project Portfolio</a></li>
@@ -38,28 +39,40 @@
                     </ul>
                 </nav>
             </header>
-            <ul>
-                <li>
+            <div class="flexslider">
+                <ul class="slides">
                     <li><img src="img/feature.jpg" alt=""></li>
-                </li>
-            </ul>
+                </ul>
+            </div>
+            
             <div class="hero__text">
-                <pclass="hero__sub">Custom, Quality</p>
+                <p class="hero__sub">Custom, Quality</p>
                 <p class="hero__title">Post Frame Buildings</p>
             </div>
         </div>
+        <nav class="phantom">
+            <ul>
+                <li><a href="" class="selected">Home</a></li>
+                <li><a href="">Photo Gallery</a></li>
+                <li><a href="">Construction Details</a></li>
+                <li><a href="">Project Portfolio</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
 
         <section role="main" class="welcome group">
             <div class="experience-statement">
-                <p>Pole Building Experts with 20+ years of experience</p>
+                <p>Pole Building Experts with 20+ Years of Experience - Serving PA, MD, NJ, and DE.</p>
             </div>
-            <div class="group">
+            <div class="welcome__text group">
                 <h1>We Believe In Quality</h1>
                 <hr>
                 <div class="main__graphic grid-half">
                     <img src="img/welcome-graphic.jpg" alt="">
                 </div>
-                <div class="main__body">
+                <div class="main__body grid-half">
                     <p>Tri-State Buildings is dedicated to helping you with every aspect of your building process. As a custom design builder, we offer the distinct advantage of providing you with your dream building from design to completion. We know what it takes to complete each project, smoothly, efficiently and in record time! </p>
                     <p>We are unwavering in our emphasis on using only the highest quality building materials and workmanship, resulting in an end product to be proud of. At Tri-State Buildings, we believe a satisfied customer is our best advertisement &amp; our quest for customer satisfaction is our highest priority. We believe that is why our many customers will tell you the same thing over &amp; over again. They are glad they chose a Tri-State Building &amp; would recommend the same to you.</p>
                 </div>
@@ -90,7 +103,7 @@
         <div class="testimonial--home">
             <p>My building was built last week and it is perfect, Tri-State exceeded my expectations and that doesn’t happen often. It was amazing to watch the crew build it, they hustled around like a bunch of ants!</p>
             <hr>
-            <p>- Keith Cole Binghamton</p>
+            <p class="author">- Keith Cole Binghamton</p>
         </div>
 
         <div class="gallery__category group">
@@ -114,9 +127,9 @@
             </div>
         </div>
 
-        <footer role="contentinfo">
-            <p class="copyright">&copy; 2015 Tri-state Buildings, LLC</p>
-            <p class="footer__address">220 East Mount Airy RD<br>Stevens, PA 17578<br>1-888-870-5359</p>
+        <footer role="contentinfo" class="group">
+            <p class="copyright">&copy; 2015 Tri-state Buildings, LLC</p><!--
+            --><p class="footer__address">220 East Mount Airy RD<br>Stevens, PA 17578<br>1-888-870-5359</p>
         </footer>
 
 
