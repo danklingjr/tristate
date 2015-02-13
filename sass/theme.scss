@@ -44,3 +44,16 @@ hr{
 		border: 3px solid $equestrian;
 	}
 }
+*[class^="button__cta"]{
+	background-color: $equestrian;
+	font-family: $headline;
+	font-size: em(32px, $font-size);
+	line-height: 1.8em;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px 30px;
+	span{
+		font-size: em(22px, $font-size);
+	}
+}

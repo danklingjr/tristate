@@ -390,6 +390,18 @@ hr {
     background-color: #983b2c;
     border: 3px solid #983b2c; }
 
+*[class^="button__cta"] {
+  background-color: #983b2c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  line-height: 1.8em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 30px; }
+  *[class^="button__cta"] span {
+    font-size: 1.375em; }
+
 /*!////////////////////////////////////////////////
 // MODULES
 /////////////////////////////////////////////////*/
