@@ -31,3 +31,16 @@ hr{
 		background-image: url(../img/texture-hr.png);
 	}
 }
+.button--project{
+	display: inline-block;
+	border: 3px solid #fff;
+	padding: 5px 20px;
+	span{
+		font-size: em(24px,$font-size);
+	}
+	&:hover,
+	&:focus{
+		background-color: $equestrian;
+		border: 3px solid $equestrian;
+	}
+}

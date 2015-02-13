@@ -56,6 +56,17 @@ nav[role=navigation]{
 		display: inline-block;
 	}
 }
+.hero--page{
+	nav[role=navigation]{
+		a{
+			&:hover,
+			&:focus{
+				color: $textColor;
+				@include prefix(text-shadow, 0 0 0 rgba(0,0,0,0.55) );
+			}
+		}
+	}
+}
 .phantom{
 	display: none;
 	width: 100%;
@@ -95,7 +106,27 @@ nav[role=navigation]{
 		}
 	}
 }
+.hero--page{
+	position: relative;
+	min-height: 345px;
+	background-image: url(../img/equestrian-bg.jpg);
+	background-size: cover;
+}
+.hero--page.general{
+	background-image: url(../img/general-bg.jpg);
+}
 .hero__text{
+	display: none;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	width: 100%;
+	text-align: center;
+	@media screen and (min-width: 600px){
+		display: inline-block;
+	}
+}
+.hero--page__text{
 	display: none;
 	position: absolute;
 	top: 50%;
@@ -128,6 +159,32 @@ nav[role=navigation]{
 	@include prefix(text-shadow, 0 1px 3px rgba(0,0,0,0.55) );
 	@media screen and (min-width: 1000px){
 		font-size: em(75px,$font-size);
+	}
+}
+.hero--page__text{
+	.hero__sub{
+		font-family: $headline;
+		font-size: em(24px,$font-size);
+		font-weight: 400;
+		line-height: 1.1em;
+		color: #c8c2be;
+		text-transform: uppercase;
+		@include prefix(text-shadow, 0 1px 3px rgba(0,0,0,0.55) );
+		@media screen and (min-width: 1000px){
+			font-size: em(24px,$font-size);
+		}
+	}
+	.hero__title{
+		font-family: $headline;
+		font-size: em(38px,$font-size);
+		font-weight: 700;
+		line-height: 1.1em;
+		color: #fff;
+		text-transform: uppercase;
+		@include prefix(text-shadow, 0 1px 3px rgba(0,0,0,0.55) );
+		@media screen and (min-width: 1000px){
+			font-size: em(48px,$font-size);
+		}
 	}
 }
 .experience-statement{
@@ -256,6 +313,74 @@ nav[role=navigation]{
 	}
 	.author{
 		color: $alternateColor;
+	}
+}
+.gallery__main{
+	img{
+		width: 100%;
+	}
+}
+.gallery__details{
+	margin-top: 20px;
+}
+.gallery__description{
+	text-align: left;
+	p{
+		font-family: $body;
+		font-size: em(16px,$font-size);
+		line-height: 1.5em;
+		margin-bottom: 15px;
+		@media screen and (min-width: 1400px){
+			font-size: em(18px,$font-size);
+			margin-bottom: 30px;
+		}
+	}
+}
+.gallery__thumb{
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.projects{
+	padding: 0 5%;
+	@media screen and (min-width: 1400px){
+		padding: 0 10%;
+	}
+}
+.project{
+	position: relative;
+	.button--project{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -94px;
+  		transform: translateY(-50%);
+		font-family: $headline;
+		font-size: em(16px, $font-size);
+		line-height: 1.8em;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	background-color: $textColor;
+	img{
+		width: 100%;
+	}
+	&:hover,
+	&:focus{
+		img{
+			opacity: 0.25;
+		}
+	}
+	a{
+		&:hover .button--project,
+		&:focus .button--project{
+			background-color: $equestrian;
+			border: 3px solid $equestrian;
+		}
 	}
 }
 

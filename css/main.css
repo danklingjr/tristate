@@ -380,6 +380,16 @@ hr {
     height: 26px;
     background-image: url(../img/texture-hr.png); }
 
+.button--project {
+  display: inline-block;
+  border: 3px solid #fff;
+  padding: 5px 20px; }
+  .button--project span {
+    font-size: 1.5em; }
+  .button--project:hover, .button--project:focus {
+    background-color: #983b2c;
+    border: 3px solid #983b2c; }
+
 /*!////////////////////////////////////////////////
 // MODULES
 /////////////////////////////////////////////////*/
@@ -435,6 +445,13 @@ nav[role=navigation] {
     nav[role=navigation] {
       display: inline-block; } }
 
+.hero--page nav[role=navigation] a:hover, .hero--page nav[role=navigation] a:focus {
+  color: #252525;
+  -webkit-text-shadow: 0 0 0 rgba(0, 0, 0, 0.55);
+  -moz-text-shadow: 0 0 0 rgba(0, 0, 0, 0.55);
+  -o-text-shadow: 0 0 0 rgba(0, 0, 0, 0.55);
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.55); }
+
 .phantom {
   display: none;
   width: 100%;
@@ -468,6 +485,15 @@ nav[role=navigation] {
 .flexslider li img {
   width: 100%; }
 
+.hero--page {
+  position: relative;
+  min-height: 345px;
+  background-image: url(../img/equestrian-bg.jpg);
+  background-size: cover; }
+
+.hero--page.general {
+  background-image: url(../img/general-bg.jpg); }
+
 .hero__text {
   display: none;
   position: absolute;
@@ -477,6 +503,17 @@ nav[role=navigation] {
   text-align: center; }
   @media screen and (min-width: 600px) {
     .hero__text {
+      display: inline-block; } }
+
+.hero--page__text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 100%;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .hero--page__text {
       display: inline-block; } }
 
 .hero__sub {
@@ -508,6 +545,35 @@ nav[role=navigation] {
   @media screen and (min-width: 1000px) {
     .hero__title {
       font-size: 4.6875em; } }
+
+.hero--page__text .hero__sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.1em;
+  color: #c8c2be;
+  text-transform: uppercase;
+  -webkit-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -moz-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -o-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55); }
+  @media screen and (min-width: 1000px) {
+    .hero--page__text .hero__sub {
+      font-size: 1.5em; } }
+.hero--page__text .hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.375em;
+  font-weight: 700;
+  line-height: 1.1em;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -moz-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -o-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55); }
+  @media screen and (min-width: 1000px) {
+    .hero--page__text .hero__title {
+      font-size: 3em; } }
 
 .experience-statement {
   background-color: #c3bab6;
@@ -651,6 +717,60 @@ nav[role=navigation] {
     margin: 0 auto; }
   .testimonial--home .author {
     color: #c3bab6; }
+
+.gallery__main img {
+  width: 100%; }
+
+.gallery__details {
+  margin-top: 20px; }
+
+.gallery__description {
+  text-align: left; }
+  .gallery__description p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 15px; }
+    @media screen and (min-width: 1400px) {
+      .gallery__description p {
+        font-size: 1.125em;
+        margin-bottom: 30px; } }
+
+.gallery__thumb {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 10px 10px 0; }
+
+.projects {
+  padding: 0 5%; }
+  @media screen and (min-width: 1400px) {
+    .projects {
+      padding: 0 10%; } }
+
+.project {
+  position: relative;
+  background-color: #252525; }
+  .project .button--project {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -94px;
+    transform: translateY(-50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .project img {
+    width: 100%; }
+  .project:hover img, .project:focus img {
+    opacity: 0.25; }
+  .project a:hover .button--project, .project a:focus .button--project {
+    background-color: #983b2c;
+    border: 3px solid #983b2c; }
 
 footer[role=contentinfo] {
   background-color: #c3bab6;
