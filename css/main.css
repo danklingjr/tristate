@@ -410,6 +410,7 @@ hr {
 
 header[role=banner] {
   position: absolute;
+  z-index: 3;
   top: 0;
   width: 100%;
   padding: 1.5% 2.5%; }
@@ -515,7 +516,7 @@ nav[role=navigation] {
   text-align: center; }
   @media screen and (min-width: 600px) {
     .hero__text {
-      display: inline-block; } }
+      display: none; } }
 
 .hero--page__text {
   display: none;

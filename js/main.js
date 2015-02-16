@@ -20,3 +20,10 @@ var newscroll;
 
 		  
 		});
+
+$('.flexslider').flexslider({
+	controlNav: false,
+	directionNav: false
+});
+
+$('.hero__text').delay(800).fadeIn(800).delay(4000).fadeOut(600);
